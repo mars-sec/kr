@@ -30,10 +30,10 @@ int main() {
 
 	print_header("F", "C", 3, 6);
 
-	far = lower;
-	while (far <= upper) {
+	far = upper;
+	while (far >= lower) {
 		cel = (5.0/9.0) * (far-32.0);
 		printf("%3.0f %6.1f\n", far, cel);
-		far = far + step;
+		far = far - step;
 	}
 }
